@@ -1,10 +1,10 @@
 package com.github.Evgenn91;
 
-import Transports.Transports;
-import Transports.Car;
-import Transports.Truck;
-import Transports.Bus;
-import Transports.Crane;
+import com.github.Evgenn91.Transports.Transports;
+import com.github.Evgenn91.Transports.Car;
+import com.github.Evgenn91.Transports.Truck;
+import com.github.Evgenn91.Transports.Bus;
+import com.github.Evgenn91.Transports.Crane;
 
 import java.util.ArrayList;
 import java.util.Collections;

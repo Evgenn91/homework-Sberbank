@@ -1,27 +1,27 @@
-package Transports;
+package com.github.Evgenn91.Transports;
 
-public class Bus implements Transports{
-    public static String name = "пассажирский транспорт";
+public class Crane implements Transports{
+    public static String name = "тяжелая техника(кран)";
     //код транспорта
-    private int code = 300;
+    private int code = 400;
     //стоимость литра топлива
-    public static double costLiter = 47.50;
+    public static double costLiter = 48.90;
     //расход топлива на 100 км
-    public static double consumption = 11.5;
+    public static double consumption = 20;
     //гос номер транспорта
     private int number;
     //пробег
     private int mileage;
-    //колличество перевезенных пассажиров
+    //вес поднятых грузов
     private int dopParamet;
 
-    public Bus(int number, int mileage, int dopParamet) {
+    public Crane(int number, int mileage, int dopParamet) {
         this.number = number;
         this.mileage = mileage;
         this.dopParamet = dopParamet;
     }
 
-    //общий расход 1го автобуса
+    //общий расход 1го крана
     @Override
     public double getExp() {
         //колличество пораченного топлива
@@ -59,10 +59,10 @@ public class Bus implements Transports{
 
     @Override
     public String toString() {
-        return "Пассажирский транспорт{" +
+        return "Тяжелая техника(кран){" +
                 "Номер=" + number +
                 ", Пробег=" + mileage +
-                ", Число перевезенных пассажиров=" + dopParamet +
+                ", Вес поднятых грузов(тонн)=" + dopParamet +
                 '}';
     }
 }

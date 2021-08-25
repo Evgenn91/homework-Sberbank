@@ -1,32 +1,29 @@
-package Transports;
+package com.github.Evgenn91.Transports;
 
-public class Truck implements Transports{
-    public static String name = "грузовой авто";
+public class Car implements Transports {
+    public static String name = "легковой автомобиль";
     //код транспорта
-    private int code = 200;
+    private int code = 100;
     //стоимость литра топлива
-    public static double costLiter = 48.90;
+    public static double costLiter = 46.10;
     //расход топлива на 100 км
-    public static double consumption = 12;
+    public static double consumption = 12.5;
     //гос номер транспорта
     private int number;
     //пробег
     private int mileage;
-    //обЪем перевезенного груза
-    private int dopParamet;
 
-    public Truck(int number, int mileage, int dopParamet) {
+    public Car(int number, int mileage) {
         this.number = number;
         this.mileage = mileage;
-        this.dopParamet = dopParamet;
     }
 
-    //общий расход 1го грузовика
+    //общий расход 1го автомобиля
     @Override
     public double getExp() {
-        //колличество пораченного топлива
+        //колличество потраченного топлива
         double consumpAll = (double) Math.round((((double) mileage)*(consumption/100)) * 100) / 100;
-        double result = (double) Math.round((consumpAll*costLiter) * 100) / 100;;
+        double result = (double) Math.round((consumpAll*costLiter) * 100) / 100;
         return result;
     }
 
@@ -34,6 +31,7 @@ public class Truck implements Transports{
     public int getNumber() {
         return number;
     }
+
     @Override
     public int getCode() {
         return code;
@@ -46,24 +44,22 @@ public class Truck implements Transports{
 
     @Override
     public int getDopParamet() {
-        return dopParamet;
+        return 0;
     }
+
+    @Override
+    public void setDopParamet(int dopParamet) {}
 
     public void setMileage(int mileage) {
         this.mileage = mileage;
     }
 
     @Override
-    public void setDopParamet(int dopParamet) {
-        this.dopParamet = dopParamet;
-    }
-
-    @Override
     public String toString() {
-        return "Грузовой автомобиль{" +
+        return "Легковой автомобиль{" +
                 "Номер=" + number +
                 ", Пробег=" + mileage +
-                ", Объем перевезенного груза(см. куб)=" + dopParamet +
+                ", Дополнительный параметр отсутствует" +
                 '}';
     }
 }
