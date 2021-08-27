@@ -16,27 +16,41 @@ public class TestTransport {
 
         //вывод общей стоимости расходов ГСМ
         calculationExpensesFuel.getTotExpTransp();
+        System.out.println("-----------------");
+        System.out.println("-----------------");
 
         //вывод расхода каждого класса авто
         calculationExpensesFuel.getTotExpClassTransp();
+        System.out.println("-----------------");
+        System.out.println("-----------------");
 
         //вывод авто с наибольшей стоимостью расходов
         calculationExpensesFuel.getMaxExpClass();
+        System.out.println("-----------------");
+        System.out.println("-----------------");
 
         //вывод авто с наименьшей стоимостью расходов
         calculationExpensesFuel.getMinExpClass();
+        System.out.println("-----------------");
+        System.out.println("-----------------");
 
         //вывод на экран отсортированного списка легковых автомобилей
         calculationExpensesFuel.printAllSortCars();
+        System.out.println("-----------------");
 
         //вывод на экран отсортированного списка грузового авто
         calculationExpensesFuel.printAllSortTruck();
+        System.out.println("-----------------");
 
         //вывод на экран отсортированного списка пассажирского транспорта
         calculationExpensesFuel.printAllSortBus();
+        System.out.println("-----------------");
 
         //вывод на экран отсортированного списка тяжелой техники
         calculationExpensesFuel.printAllSortCrane();
+        System.out.println("-----------------");
+        System.out.println("-----------------");
+
 
     }
 }
