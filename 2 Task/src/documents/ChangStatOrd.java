@@ -1,4 +1,4 @@
-package Documents;
+package documents;
 
 public abstract class ChangStatOrd {
     private Enum status;            //статус приказа

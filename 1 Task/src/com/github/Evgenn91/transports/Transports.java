@@ -1,4 +1,4 @@
-package com.github.Evgenn91.Transports;
+package com.github.Evgenn91.transports;
 
 public interface Transports<toStrin> {
     int getNumber();

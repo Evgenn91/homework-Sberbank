@@ -1,4 +1,4 @@
-package Documents;
+package documents;
 
 
 //письмо

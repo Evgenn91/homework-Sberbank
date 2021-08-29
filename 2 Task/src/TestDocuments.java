@@ -1,7 +1,7 @@
-import Documents.Letter;
-import Documents.OrderDismiss;
-import Documents.OrderRecept;
-import Documents.StatusOrder;
+import documents.Letter;
+import documents.OrderDismiss;
+import documents.OrderRecept;
+import documents.StatusOrder;
 
 public class TestDocuments {
     public static void main(String[] args) {
